@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>cakezone</title>
+        <link href="css/bootstrap-grid.min.css" rel="stylesheet"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="index.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+            
+$(document).ready(function() {
+
+$('.counter').each(function () {
+$(this).prop('Counter',0).animate({
+Counter: $(this).text()
+}, {
+duration: 4000,
+easing: 'swing',
+step: function (now) {
+    $(this).text(Math.ceil(now));
+}
+});
+});
+
+});  
+
+
+        </script>
+    </head>
+    <body>
+        <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-12">
+        <div class="container">
+            <div class="row">
+            <div class=" four col-md-3 d-flex">
+                <div class="counter-box colored">
+                <div class="d-flex ">
+                    <span class="iconstyle p-2">
+                    <i class="fa-regular fa-star p-2 icondesign" ></i>
+                </span>
+                    <span>
+                    <h5 class="text-white">Our Experiance</h5>    
+                    <span class="counter">2147</span>
+                </span>
+                </div>
+                </div>
+            </div>
+            <div class="four col-md-3 d-flex">
+                <div class="counter-box colored">
+                    <div class="d-flex ">
+                        <span class="iconstyle p-2">
+                    <i class="fa fa-users p-2 icondesign"></i>
+                </span>
+                <span>
+                    <h5 class="text-white">Cake Specialist</h5>
+                    <span class="counter">3275</span>
+                </span>
+            </div>
+                </div>
+            </div>
+            <div class="four col-md-3 d-flex">
+                <div class="counter-box colored">
+                    <div class="d-flex">
+                        <span class="iconstyle p-2">
+                    <i class="fa fa-check p-2 icondesign"></i>
+                    </span>
+                    <span>
+                    <h6 class="text-white">Complete Project</h6>
+                    <span class="counter">3289</span>
+                    </span>
+                </div>
+                </div>
+            </div>
+            <div class="four col-md-3 d-flex">
+                <div class="counter-box colored">
+                    <div class="d-flex">
+                        <span class="iconstyle p-2">
+                    <i class="fa fa-mug-hot p-2 icondesign"></i>
+                    </span>
+                    <span>
+                       <h5 class="text-white">Happy Clients</h5>   
+                       <span class="counter">1563</span>
+                    </span>
+                </div>
+                </div>
+            </div>
+          </div>	
+        </div>
+    </div>
+</div>
+  </div>
+        </div>
+        </div>
+        </body>
+        </html>
+        
